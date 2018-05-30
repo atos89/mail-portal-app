@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>入力内容の確認</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <form action="/{{ params.program_keyname }}/send" method="post">
+        <div>
+            <div>
+                <p>{{ params.program_name }}</p>
+            </div>
+            <div>
+                <p>{{ params.corner }}</p>
+            </div>
+            <div>
+                <p>{{ params.radio_name }}</p>
+            </div>
+            <div>
+                <p>{{ params.email }}</p>
+            </div>
+            <div>
+                <p>{{ params.body }}</p>
+            </div>
+            <input type="submit" name="btn-send" value="送信">
+        </div>
+    </form>
+</body>
+</html>

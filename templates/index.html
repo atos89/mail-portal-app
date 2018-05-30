@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Mail-Portal</h1>
+{% for program in params.programs %}
+        <ul>
+            <li>
+                <a href="/{{ program.keyname }}/input">{{ program.name }}</a>
+            </li>
+        </ul>        
+{% endfor %}
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

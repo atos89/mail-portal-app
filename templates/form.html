@@ -1,0 +1,7 @@
+<form action="/post" method="post">
+    <select>
+{% for corner in params.corners %}
+        <option>{{ corner }}</option>
+{% endfor %}
+    </select>
+</form>
